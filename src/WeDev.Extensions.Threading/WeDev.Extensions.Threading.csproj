@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
+    <Description>Extensions to System.Threading namespace for provides missed functionalities.</Description>
   </PropertyGroup>
 
 </Project>
