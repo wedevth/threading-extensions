@@ -1,9 +1,18 @@
 <Project>
 
- <PropertyGroup>
-   <CodeAnalysisRuleSet>$(MSBuildThisFileDirectory)CodeAnalysis.ruleset</CodeAnalysisRuleSet>
-   <Nullable>enable</Nullable>
-   <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
- </PropertyGroup>
+  <PropertyGroup>
+    <CodeAnalysisRuleSet>$(MSBuildThisFileDirectory)CodeAnalysis.ruleset</CodeAnalysisRuleSet>
+    <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <Version>1.0.0</Version>
+    <Authors>We Develop</Authors>
+    <Copyright>
+      Copyright 2019 The Zcoin developers
+      Copyright 2020 We Develop Co.,Ltd.
+    </Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>threading</PackageTags>
+    <RepositoryUrl>https://github.com/wedevth/threading-extensions.git</RepositoryUrl>
+  </PropertyGroup>
 
 </Project>

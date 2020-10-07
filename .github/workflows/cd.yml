@@ -1,0 +1,23 @@
+name: Continuous Delivery
+on:
+  push:
+    tags:
+    - '*'
+env:
+  NUGET_KEY: ${{ secrets.NUGET_KEY }}
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-18.04
+    steps:
+    - name: Checkout source
+      uses: actions/checkout@v2
+    - name: Setup .NET Core SDK
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '3.1.x'
+    - name: Build
+      run: dotnet pack -o packages -c Release src/WeDev.Extensions.Threading.sln
+    - name: Publish
+      working-directory: packages
+      run: dotnet nuget push "*.nupkg" -k "$NUGET_KEY" -s https://api.nuget.org/v3/index.json --skip-duplicate
