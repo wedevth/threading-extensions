@@ -1,0 +1,9 @@
+<Project>
+
+ <PropertyGroup>
+   <CodeAnalysisRuleSet>$(MSBuildThisFileDirectory)CodeAnalysis.ruleset</CodeAnalysisRuleSet>
+   <Nullable>enable</Nullable>
+   <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+ </PropertyGroup>
+
+</Project>
