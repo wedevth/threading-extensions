@@ -2,6 +2,10 @@
 
 This is a .NET library to provides missed functionalities.
 
+## Installation
+
+You can install this package via [NuGet](https://www.nuget.org/packages/WeDev.Extensions.Threading/).
+
 ## Development
 
 ### Prerequisites
